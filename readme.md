@@ -23,7 +23,7 @@ http://localhost:3000/api
 ### 1. Get All Psychiatrists
 **Description**: Fetches a list of psychiatrists near a specified location.  
 **Method**: `GET`  
-**Endpoint**: `/psychiatrists`
+**Endpoint**: `{{URL}}/api/google-maps/psychiatrists`
 
 #### Request Parameters
 | Parameter  | Type   | Required | Description                          |
@@ -32,7 +32,7 @@ http://localhost:3000/api
 | `radius`   | Number | Yes      | Radius in meters to search within.  |
 
 #### Sample Request
-GET /psychiatrists?location=-6.200000,106.816666&radius=5000
+GET {{URL}}/api/google-maps/psychiatrists?location=-6.200000,106.816666&radius=5000
 
 
 #### Sample Response
@@ -60,13 +60,13 @@ GET /psychiatrists?location=-6.200000,106.816666&radius=5000
 ```
 
 
-### 1. Get Psychiatrist by Place ID
+### 2. Get Psychiatrist by Place ID
 **Description**: Fetches a list of psychiatrists near a specified location.  
 **Method**: `GET`  
-**Endpoint**: `/psychiatrists/:placeId`
+**Endpoint**: `{{URL}}/api/google-maps/psychiatrist/:placeId`
 
 #### Sample Request
-GET /psychiatrists/ChIJN1t_tDeuEmsRUsoyG83frY4
+GET {{URL}}/api/google-maps/psychiatrist/ChIJN1t_tDeuEmsRUsoyG83frY4
 
 #### Sample Response
 ```json
